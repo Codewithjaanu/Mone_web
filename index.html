@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Font (Outfit) -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <section id="navbar" class="fixed top-0 left-0 w-full flex justify-between items-center p-8  text-white z-50">
+        <h1 class="text-xl sm:text-2xl md:text-3xl font-medium">Mone</h1>
+        <div class="flex justify-center items-center gap-4">
+            <!-- Button 1 -->
+            <button
+                class="flex items-center justify-center gap-2 px-3 py-2 border border-white rounded-full group hover:bg-white hover:text-black transition">
+                LET'S TALK
+                <li
+                    class="w-4 h-4 border-2 border-current rounded-full transform transition-transform duration-300 group-hover:rotate-180">
+                </li>
+            </button>
+
+            <!-- Button 2 -->
+            <button
+                class="flex items-center justify-center gap-2 px-3 py-2 border bg-white text-black rounded-full group hover:bg-black hover:text-white transition">
+                MENU
+                <li
+                    class="w-4 h-4 border-2 border-current rounded-full transform transition-transform duration-300 group-hover:rotate-180">
+                </li>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- Header Section -->
+    <section class="header flex flex-col items-center justify-center  min-h-screen px-4">
+        <h1 class="text-center text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-semibold stroke-text">
+            Arthur Jackson
+        </h1>
+    </section>
+
+    <section class="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Biography Section -->
+        <div class=" shadow-md p-6 rounded-lg">
+            <h1 class="text-2xl font-bold  mb-4">Biography</h1>
+            <p class=" mb-6">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nemo, vitae atque quod porro cumque!
+                Voluptatum aliquam nesciunt impedit placeat.
+            </p>
+            <h1 class="text-2xl font-bold mb-4">Skills</h1>
+            <ul class="list-disc list-inside  space-y-2">
+                <li>Web Development</li>
+                <li>UI & UX Design</li>
+                <li>Marketing</li>
+                <li>SEO</li>
+                <li>Management</li>
+            </ul>
+            <h1 class="text-2xl font-bold  mt-6 mb-4">Connect</h1>
+            <div class="flex space-x-4 text-2xl ">
+                <i class="fa-brands fa-facebook text-blue-600"></i>
+                <i class="fa-brands fa-twitter text-blue-400"></i>
+                <i class="fa-brands fa-instagram text-pink-500"></i>
+            </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="flex justify-center items-center">
+            <img src="./assets/hero-avatar.jpg" alt="Hero Avatar" class="rounded-full w-64 h-64 object-cover shadow-lg">
+        </div>
+
+        <!-- Stats Section -->
+        <div class="shadow-md p-6 rounded-lg text-end">
+            <div class="mb-6">
+                <h1 class="text-3xl font-bold ">Projects Done</h1>
+                <span class="text-4xl font-extrabold text-blue-600">432</span>
+            </div>
+            <div class="mb-6">
+                <h1 class="text-3xl font-bold">Years of Experience</h1>
+                <span class="text-4xl font-extrabold text-green-600">13+</span>
+            </div>
+            <div>
+                <h1 class="text-3xl font-bold">Worldwide Clients</h1>
+                <span class="text-4xl font-extrabold text-purple-600">900</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-8">
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold">
+                <i class="fa-brands fa-cloudscale text-xl text-indigo-600"></i> Services
+            </h1>
+            <p class="text-4xl mt-2">What I <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r text-3xl from-pink-400 via-indigo-600 to-purple-800">Do</span>
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="text-center bg-white p-8 rounded-lg shadow-lg">
+                <div class="flex justify-center items-center mb-4">
+                    <p class="text-3xl font-semibold text-gray-700 mr-2">01/</p>
+                    <i class="fa-solid fa-pen-fancy text-4xl text-indigo-600"></i>
+                </div>
+                <p class="text-xl font-semibold text-gray-800">Design</p>
+                <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, debitis.
+                </p>
+            </div>
+            <div class="text-center bg-white p-8 rounded-lg shadow-lg">
+                <div class="flex justify-center items-center mb-4">
+                    <p class="text-3xl font-semibold text-gray-700 mr-2">02/</p>
+                    <i class="fa-solid fa-code text-4xl text-indigo-600"></i>
+                </div>
+                <p class="text-xl font-semibold text-gray-800">Development</p>
+                <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, debitis.
+                </p>
+            </div>
+            <div class="text-center bg-white p-8 rounded-lg shadow-lg">
+                <div class="flex justify-center items-center mb-4">
+                    <p class="text-3xl font-semibold text-gray-700 mr-2">03/</p>
+                    <i class="fa-solid fa-laptop text-4xl text-indigo-600"></i>
+                </div>
+                <p class="text-xl font-semibold text-gray-800">Marketing</p>
+                <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, debitis.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex space-x-4 p-8">
+        <img src="./assets/client-2.png" alt="" class="w-56 h-auto">
+        <img src="./assets/client-5.png" alt="" class="w-56 h-auto">
+        <img src="./assets/client-3.png" alt="" class="w-56 h-auto">
+        <img src="./assets/client-4.png" alt="" class="w-56 h-auto">
+        <img src="./assets/client-6.png" alt="" class="w-56 h-auto">
+    </section>
+
+    <div class="flex justify-center mt-10">
+        <section class="bg-gray-800 p-10 w-[93%] rounded-md text-white">
+            <!-- Portfolio Header -->
+            <header class="text-center mb-8">
+                <h1 class="text-4xl font-bold flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-cloudscale text-xl text-indigo-600"></i> Portfolio
+                </h1>
+                <p class="text-4xl mt-2">
+                    Recent <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r text-3xl from-pink-400 via-indigo-600 to-purple-800">
+                        Works
+                    </span>
+                </p>
+                <p class="mt-2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                </p>
+            </header>
+
+            <!-- Navigation Arrows -->
+            <div class="flex justify-center gap-4 mb-6">
+                <button class="text-4xl focus:outline-none hover:text-indigo-500">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="text-4xl focus:outline-none hover:text-indigo-500">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Portfolio Items -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Portfolio Item 1 -->
+                <article class="bg-gray-900 p-4 rounded-md hover:shadow-lg transition">
+                    <img src="./assets/portfolio-1.jpg" alt="Fold Twist Abstract Design"
+                        class="w-full h-auto rounded-md">
+                    <div class="mt-4">
+                        <p class="text-sm text-gray-400">Category: Design</p>
+                        <p class="text-lg font-medium flex items-center gap-2">
+                            <i class="fa-solid fa-arrow-right text-indigo-600"></i> Fold Twist Abstract
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Portfolio Item 2 -->
+                <article class="bg-gray-900 p-4 rounded-md hover:shadow-lg transition">
+                    <img src="./assets/portfolio-2.jpg" alt="Colors of Circle Artwork" class="w-full h-auto rounded-md">
+                    <div class="mt-4">
+                        <p class="text-sm text-gray-400">Category: Art</p>
+                        <p class="text-lg font-medium flex items-center gap-2">
+                            <i class="fa-solid fa-arrow-right text-indigo-600"></i> Colors of Circle
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <div class="container mx-auto px-4 py-8">
+        <!-- Wrapper for the two sections -->
+        <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
+            <!-- Left Section (Achievements Heading) -->
+            <section class="lg:w-1/3 text-left">
+                <h1 class="text-1xl font-bold flex items-center gap-2">
+                    <i class="fa-brands fa-cloudscale text-4xl text-indigo-600"></i>
+                    Achievements
+                </h1>
+                <p class=" text-4xl mt-2">
+                    Awa<span class="font-semibold text-4xl text-indigo-600">rds</span>
+                </p>
+            </section>
+
+            <!-- Right Section (Achievements Cards) -->
+            <section class="lg:w-2/3 grid gap-8 md:grid-cols-2">
+                <!-- Achievement Card -->
+                <div class="shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <h1 class="text-xl font-semibold mb-2">Best Designer of the Month</h1>
+                    <span class="block text-indigo-500 font-medium mb-4">2024</span>
+                    <p class="text-gray-600">
+                        Lorem, ipsum dolor sit amet consectetur<br />
+                        adipisicing elit. Harum, sit.<br />
+                        dolor sit amet consectetur
+                    </p>
+                </div>
+
+                <!-- Achievement Card -->
+                <div class=" shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <h1 class="text-xl font-semibold mb-2">The Trun Gem</h1>
+                    <span class="block text-indigo-500 font-medium mb-4">2024</span>
+                    <p class="text-gray-600">
+                        Lorem, ipsum dolor sit amet consectetur<br />
+                        adipisicing elit. Harum, sit.<br />
+                        dolor sit amet consectetur
+                    </p>
+                </div>
+
+                <!-- Achievement Card -->
+                <div class=" shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <h1 class="text-xl font-semibold mb-2">First Class Performer</h1>
+                    <span class="block text-indigo-500 font-medium mb-4">2024</span>
+                    <p class="text-gray-600">
+                        Lorem, ipsum dolor sit amet consectetur<br />
+                        adipisicing elit. Harum, sit.<br />
+                        dolor sit amet consectetur
+                    </p>
+                </div>
+
+                <!-- Achievement Card -->
+                <div class=" shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <h1 class="text-xl font-semibold mb-2">Customers' Favourite</h1>
+                    <span class="block text-indigo-500 font-medium mb-4">2024</span>
+                    <p class="text-gray-600">
+                        Lorem, ipsum dolor sit amet consectetur<br />
+                        adipisicing elit. Harum, sit.<br />
+                        dolor sit amet consectetur
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="flex items-start gap-6   max-w-4xl mx-auto mt-10">
+        <!-- Image Section -->
+        <section class="flex-shrink-0">
+            <img src="./assets/testimonial-1@2x.jpg" alt="Marcella Leonard" class="w-40 h-40 rounded-full object-cover">
+        </section>
+
+        <!-- Content Section -->
+        <section>
+            <h1 class="text-2xl font-bold">Marcella Leonard</h1>
+            <p class="text-lg text-gray-500">Creative Director</p>
+            <p class="mt-2 text-gray-700">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil debitis dolore sed est,
+                fugiat deleniti excepturi. Adipisci sit perferendis minus?
+            </p>
+            <span class="block mt-4 h-px bg-gray-300"></span>
+        </section>
+    </div>
+
+    <div class="flex justify-center mt-10">
+        <section class="bg-gray-800 p-10 w-[93%] rounded-md text-white">
+            <!-- Portfolio Header -->
+            <header class="text-center mb-8">
+                <h1 class="text-4xl font-bold flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-cloudscale text-xl text-indigo-600"></i> Journal
+                </h1>
+                <p class="text-4xl mt-2">
+                    Blog <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r text-3xl from-pink-400 via-indigo-600 to-purple-800">
+                        Posts
+                    </span>
+                </p>
+                <p class="mt-2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                </p>
+            </header>
+
+            <!-- Navigation Arrows -->
+            <div class="flex justify-center gap-4 mb-6">
+                <button class="text-4xl focus:outline-none hover:text-indigo-500">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="text-4xl focus:outline-none hover:text-indigo-500">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Portfolio Items -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Portfolio Item 1 -->
+                <article class="bg-gray-900 p-4 rounded-md hover:shadow-lg transition">
+                    <img src="./assets/blog-1.jpg" alt="Fold Twist Abstract Design" class="w-full h-auto rounded-md">
+                    <div class="mt-4">
+                        <p class="text-sm text-gray-400">Category: Design</p>
+                        <p class="text-lg font-medium flex items-center gap-2">
+                            <i class="fa-solid fa-arrow-right text-indigo-600"></i> Fold Twist Abstract
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Portfolio Item 2 -->
+                <article class="bg-gray-900 p-4 rounded-md hover:shadow-lg transition">
+                    <img src="./assets/blog-2.jpg" alt="Colors of Circle Artwork" class="w-full h-auto rounded-md">
+                    <div class="mt-4">
+                        <p class="text-sm text-gray-400">Category: Art</p>
+                        <p class="text-lg font-medium flex items-center gap-2">
+                            <i class="fa-solid fa-arrow-right text-indigo-600"></i> Colors of Circle
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <div class="min-h-screen flex flex-col items-center justify-center px-4">
+        <!-- Header Section -->
+        <section class="text-center mb-8">
+            <h1 class="text-4xl font-bold flex items-center justify-center gap-2">
+                <i class="fa-brands fa-cloudscale text-xl text-indigo-600"></i> Contact
+            </h1>
+            <p class="text-2xl mt-2">
+                Let's <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-indigo-600 to-purple-800">Talk</span>
+            </p>
+        </section>
+
+        <!-- Contact Info & Form Section -->
+        <section class="shadow-md rounded-lg p-6 w-full max-w-2xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <!-- Contact Info -->
+                <div class="space-y-4">
+                    <div>
+                        <h1 class="text-lg font-semibold">Email:</h1>
+                        <p class="text-gray-600">contact@flatheme.net</p>
+                    </div>
+                    <div>
+                        <h1 class="text-lg font-semibold">Call:</h1>
+                        <p class="text-gray-600">+1234 56789</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="space-y-4">
+                    <input type="text" placeholder="Name"
+                        class="w-full border  rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                    <input type="email" placeholder="Email"
+                        class="w-full border  rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                    <input type="text" placeholder="Subject"
+                        class="w-full border  rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                    <textarea placeholder="Message"
+                        class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none h-24"></textarea>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button
+                class="bg-indigo-600  font-semibold px-6 py-2 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 w-full">
+                Send Message
+            </button>
+        </section>
+    </div>
+
+
+</body>
+
+</html>
